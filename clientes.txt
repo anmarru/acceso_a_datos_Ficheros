@@ -1,0 +1,4 @@
+1,Juan Pérez,12345678A,Juan.Perez@mail.com,+34600123456
+2,María Gómez,87654321B,MARIA.GOMEZ@mail.com,+44600654321
+3,Carlos López,45612378C,caRlos.loPez@mail.com,600789012
+4,Ana Torres,23456789D,ANA.torres@mail.com,+34600111222
