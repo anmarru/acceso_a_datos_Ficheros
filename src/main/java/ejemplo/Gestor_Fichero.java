@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -51,10 +52,24 @@ public class Gestor_Fichero {
 
 
     public static void comprobar_linea(String linea){
-
+        String[] campos= linea.split(",");
         if(linea.isEmpty()){
             throw new IllegalArgumentException("NO se pueden lineas vacias ");
         }
-        if(linea.)
+        if(linea.length()!=5 ){
+            throw new IllegalArgumentException(" Formato no valido : debe de haber 5 campos");
+        }
+        if(Arrays.stream(campos).anyMatch())
     }
+
+    public static String lineasCliente(Cliente cliente){
+        return cliente.getId()+","+ cliente.getNombre()+","+cliente.getDni()+","+cliente.getTelefono();
+    }
+
+    //ejercicio2
+    public List<Cliente> exportarCliente(){
+        
+    }
+
+
 }
