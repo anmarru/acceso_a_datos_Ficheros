@@ -1,5 +1,8 @@
 package ejemplo;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Cliente {
     
     private int id;

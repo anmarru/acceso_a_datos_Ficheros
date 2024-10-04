@@ -119,17 +119,17 @@ public class Gestor_Fichero {
 
     // Ejercicio3
     public static List<Cliente> leerClienteCSV() {
-        try (FileReader fileReader = new FileReader("Alumno.csv")) {
-// Se crea un csvToBean de clase Alumno
-CsvToBean<Alumno> csvToBean = new
-CsvToBeanBuilder<Alumno>(fileReader)
-.withType(Alumno.class)
-.build();
-// Parsea el fichero CSV en una lista de alumnos
-List<Alumno> listaAlumnos = csvToBean.parse();
-} catch (IOException e) {
-System.out.println("Error");
-    }
+            try (FileReader fileReader = new FileReader("clientes.csv")) {
+    // Se crea un csvToBean de clase Alumno
+    CsvToBean<Cliente> csvToBean = new
+    CsvToBeanBuilder<Cliente>(fileReader)
+    .withType(Cliente.class)
+    .build();
+    // Parsea el fichero CSV en una lista de alumnos
+    List<Cliente> listaAlumnos = csvToBean.parse();
+    } catch (IOException e) {
+        System.out.println("Error");
+        }
 
     // EJERCICIO 4
     public static void exportarClientesCSV() {
@@ -148,3 +148,5 @@ System.out.println("Error");
     }
 
 }
+
+
